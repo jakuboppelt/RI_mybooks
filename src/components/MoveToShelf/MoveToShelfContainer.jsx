@@ -6,6 +6,7 @@ function getShelf(shelf) {
   if (!shelf) {
     return 'none';
   }
+  return shelf;
 }
 
 class MoveToShelf extends Component {
