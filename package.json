@@ -6,7 +6,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "redux": "4.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,12 +16,27 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "semi": "error",
+      "quotes": [
+        2,
+        "single",
+        {
+          "avoidEscape": true
+        }
+      ]
+    }
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^5.0.1",
+    "redux-thunk": "^2.3.0"
+  }
 }
